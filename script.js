@@ -78,6 +78,9 @@ function equalResult(){
 
     currentOperator = ''; 
     screenValue = result; 
+    if (val1 == 9 && val2 == 10){
+        result = 21;
+    }
     screen.innerHTML = result;
 }
 
