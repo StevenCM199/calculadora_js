@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+  <div class="calculator">
+    <div class="screen">
+      <h1 id ='screen'>0</h1>
+    </div>
+
+  <div class="button-space">
+
+    <div class="button-row">
+      <div onclick="clearScreen()" class="clearer button" id="AC">
+        <h2>AC</h2>
+      </div>
+
+      <div class="clearer button" id="+/-">
+        <h2>+/-</h2>
+      </div>
+
+      <div class="clearer button" id="%">
+        <h2>%</h2>
+      </div>
+
+      <div onclick='calcDiv()' class="operator button" id="division">
+        <h2>÷</h2>
+      </div>
+    </div>
+
+    <div class="button-row">
+      <div onclick="writeOnScreen('7')" class="number button" id="num7">
+        <h2>7</h2>
+      </div>
+
+      <div onclick="writeOnScreen('8')" class="number button" id="num8">
+        <h2>8</h2>
+      </div>
+
+      <div onclick="writeOnScreen('9')" class="number button" id="num9">
+        <h2>9</h2>
+      </div>
+
+      <div onclick='calcMul()' class="operator button" id="multiplier">
+        <h2>𐤕</h2>
+      </div>
+    </div>
+      
+    <div class="button-row">
+      <div onclick="writeOnScreen('4')" class="number button" id="num4">
+        <h2>4</h2>
+      </div>
+
+      <div onclick="writeOnScreen('5')" class="number button" id="num5">
+        <h2>5</h2>
+      </div>
+
+      <div onclick="writeOnScreen('6')" class="number button" id="num6">
+        <h2>6</h2>
+      </div>
+
+      <div onclick='calcSub()' class="operator button" id="minus">
+        <h2>-</h2>
+      </div>
+    </div>
+      
+    <div class="button-row">
+      <div onclick="writeOnScreen('1')" class="number button" id="num1">
+        <h2>1</h2>
+      </div>
+
+      <div onclick="writeOnScreen('2')" class="number button" id="num2">
+        <h2>2</h2>
+      </div>
+
+      <div onclick="writeOnScreen('3')" class="number button" id="num3">
+        <h2>3</h2>
+      </div>
+
+      <div onclick='calcSum()' class="operator button" id="plus">
+        <h2>+</h2>
+      </div>
+    </div>
+      
+    <div  class="button-row">
+      <div onclick="writeOnScreen('0')" class="number wide-button" id="num0">
+        <h2>0</h2>
+      </div>
+
+      <div class="number button" id="num.">
+        <h2>.</h2>
+      </div>
+
+      <div onclick= 'equalResult()' class="operator button" id="equal">
+        <h2>=</h2>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

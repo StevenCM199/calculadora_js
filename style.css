@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+body{
+    background-color: black;
+    font-family: 'Poppins';
+}
+
+.calculator{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    margin:auto;
+}
+
+.screen{
+    display: flex; 
+    color: white; 
+    font-size: 2rem;  
+    height: 150px;   
+}
+
+.screen h1{
+    text-align: right;
+    width: 95%;
+}
+
+.button-row{
+    display: flex;
+}
+
+
+.button-space{ 
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem; 
+}
+
+.button{
+    color: white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer; 
+    user-select: none;
+  }
+
+.wide-button{
+    color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 8.9rem;
+    border-radius: 35px;
+    cursor: pointer; 
+    user-select: none;
+  }
+
+.number{
+    background: gray;
+}
+
+.number:hover{
+    background: rgb(174, 173, 173);
+}
+
+.number:active{
+    background: rgb(202, 202, 202);
+}
+
+.operator{
+    background: orange;
+}
+
+.operator:hover{
+    background: rgb(255, 183, 48);
+}
+
+.operator:active{
+    background: rgb(255, 190, 69);
+}
+
+.clearer{
+    background: rgb(206, 200, 200); 
+    color: black;
+}
+
+.clearer:hover{
+    background: rgb(238, 233, 233); 
+}
+
+.clearer:active{
+    background: rgb(255, 255, 255); 
+}
